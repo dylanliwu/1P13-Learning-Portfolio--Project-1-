@@ -11,7 +11,9 @@ body {
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
+
 
 :root {
     --font-title: clamp(2rem, 3.5vw, 7.5rem);
@@ -175,6 +177,10 @@ body {
         transition: 0.3s;
         margin-right: 10px;
     }
+}
+
+a {
+    color: white;
 }
 
 .footer {
