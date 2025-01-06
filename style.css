@@ -12,23 +12,41 @@ body {
     border: 0;
     box-sizing: border-box;
     text-decoration: none;
+    /* border: 1px solid white; */
 }
 
 
 :root {
-    --font-title: clamp(2rem, 3.5vw, 7.5rem);
+    --font-title: clamp(2rem, 8vw, 30rem);
     --font-sub-title: clamp(1.25rem, 1vw, 2.5rem);
     --font-heading: clamp(1.25rem, 1.75vw, 5rem);
     --font-paragraph: clamp(0.75rem, 0.85vw, 3rem);
+}
 
-    --box-shadow-standard: 0px 0px 20px 10px rgb(5, 5, 5);
+@keyframes bounce {
+    from {
+        transform: translate(0, -10px);
+    }
+    50% {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(0, -10px);
+    }
 }
 
 .block-container {
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
-    padding: 5%;
+    padding: 3%;
+}
+
+.landing-container {
+    margin: 10% 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
 }
 
 .block {
@@ -36,7 +54,6 @@ body {
     transition: 0.5s;
     background-color: rgb(10, 10, 10);
     margin: 2% 0;
-    box-shadow: var(--box-shadow-standard);
 }
 
 .large-block {
@@ -60,7 +77,7 @@ body {
 }
 
 .image-block {
-    box-shadow: 0px 0px 20px 1px rgb(70, 70, 70);
+    border: 15px solid rgb(10, 10, 10);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -69,6 +86,15 @@ body {
         filter: brightness(100%);
         scale: 1.01;
     }
+}
+
+.skills-block {
+    width: 90%;
+}
+
+.text-block:hover {
+    scale: 1.05;
+    cursor:grab;
 }
 
 #image1 {
@@ -85,6 +111,10 @@ body {
 
 #image4 {
     background-image: url("picture-2.jpg");
+}
+
+#image5 {
+    background-image: url("drawing.png");
 }
 
 .tooltip {
@@ -107,15 +137,17 @@ body {
 
 .main-title {
     font-size: var(--font-title);
-    background: linear-gradient(180deg, rgba(56,197,250,1) 33%, rgba(66,104,254,1) 100%);
-    color: transparent;
-    background-clip: text;
+    color: white;
 }
 
 .main-sub-title {
     font-size: var(--font-sub-title);
     margin-bottom: 3%;
     color: rgb(80, 80, 80);
+}
+
+.main-text {
+    width: 70%;
 }
 
 .skills-sub-title {

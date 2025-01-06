@@ -17,54 +17,73 @@
 </head>
 <body>
 
-    <div class="block-container">
-        <div class="large-block block centered-block">
+    <div class="landing-container">
+        <div>
             <h1 class="main-title">Learning Portfolio</h1>
             <h2 class="main-sub-title">1P13 Project 1</h2>
-            <p class="text">The purpose of this project was to create a mechanism that would safely transport airport luggage.</p>
+            <p class="main-text">When we travel our time and belongings are precious, but airport luggage systems are slow and unreliable.
+                We were tasked to design a mechanism that would safely transport luggage from point A to B, without exceeding the constriction boundary.
+                </p>
         </div>
-        <div class="small-block block">
-            <div class="skills-container">
-                <h2 class="heading">Skills Developed</h2>
-                <h3 class="skills-sub-title">Technical Skills</h3>
-                <div class="chip-container">
-                    <div class="skill chip">3D Printing</div>
-                    <div class="skill chip">Programming (Python)</div>
-                </div>
-                <div class="skill"></div>
-                <h3 class="skills-sub-title">Soft Skills</h3>
-                <div class="chip-container">
-                    <div class="skill chip">Initiative</div>
-                    <div class="skill chip">Communication</div>
-                </div>
+        <div class="small-block block skills-block">
+            <h2 class="heading">Skills Developed</h2>
+            <h3 class="skills-sub-title">Technical Skills</h3>
+            <div class="chip-container">
+                <div class="skill chip">3D Printing</div>
+                <div class="skill chip">Programming (Python)</div>
+                <div class="skill chip">CAD (AutoDesk)</div>
+            </div>
+            <div class="skill"></div>
+            <h3 class="skills-sub-title">Soft Skills</h3>
+            <div class="chip-container">
+                <div class="skill chip">Initiative</div>
+                <div class="skill chip">Communication</div>
             </div>
         </div>
+    </div>
+
+    <div class="block-container">
+        <div class="large-block block centered-block text-block" id="block1Front">
+            <h2 class="heading">The Process</h2>
+            <p class="text">Given a clear goal, two actuator choices (linear and rotary), and a simple constriction, the design process began! From group brainstorming to design drawings to CAD models we landed on our final design. Using 3D printed parts and some screws and bolts our mechanism was complete. With Python, we created functions that would extract relevant data from the “airport data sheets”. We further coded the sorting portion regarding the Q-ARM (the robotic arm that would be placing luggage on our ramp or in the discard pile) and the actuators that made our mechanism function.</p>
+        </div>
+        <div class="large-block block centered-block text-block" style="display: none;" id="block1Back">
+            <h2 class="heading">My Contributions</h2>
+            <p class="text">My success illustrating ideas through my initial CAD models led to aspects of my mockup being integrated into the final design, primarily the drawbridge mechanism. Additionally, I eagerly helped in the coding portion. I felt comfortable creating flowcharts and after completing my own code snippet I led the way in writing the group and mechanism (Q-ARM/Actuator) code.</p>
+        </div>
+        <div class="small-block block image-block" id="image5">
+            <div class="tooltip" id="tooltip5">Design Drawing</div>
+        </div>
+        <div class="small-block block image-block" id="image3">
+            <div class="tooltip" id="tooltip3">Prusa 3D Printer</div>
+        </div>
+        <div class="large-block block centered-block text-block" id="block2Front">
+            <h2 class="heading">What I Learned</h2>
+            <p class="text">From this project I learned more about 3D printing regarding 3D model preparation, print settings, and support implementation. Additionally, throughout this project I developed my initiative. When I took initiative on tasks the group felt more comfortable at the time, but they would then work more effectively on their tasks later on. Initiative led to a trustworthy and reliable group environment helping to shape a better product.</p>
+        </div>
+        <div class="large-block block centered-block text-block" style="display: none;" id="block2Back">
+            <h2 class="heading">Read More</h2>
+            <p class="text">bbb</p>
+        </div>
+        <div class="large-block centered-block block text-block" id="block3Front">
+            <h2 class="heading">The Outcome</h2>
+            <p class="text">Our end product was not up to our expectations. Utilizing string to hold up the ramp with the help of our actuators was difficult due to positioning and actuator strength. I wonder what our outcome would be if we sacrificed creativity for a tried and true design (like a simple rotating ramp). Additionally, our group struggled with minimizing print time for our 3D pieces; I wonder how our design and outcome would change if we decided to use laser cutting which is quick and reliable.</p>
+        </div>
+        <div class="large-block block centered-block text-block" style="display: none;" id="block3Back">
+            <h2 class="heading">What I'd Do Different</h2>
+            <p class="text">Throughout our design process we took advice too literally; we altered our design drastically to address criticism and potential issues. Looking back I wish we tried to stay true to our original design. Advice is useful, but we had the right idea and implementing most of the advice we were given created more complexities and likely led to less success.</p>
+        </div>
+        <div class="small-block block image-block" id="image4" style="box-shadow: 0px 0px 15px 1px rgb(30, 30, 30);">
+            <div class="tooltip" id="tooltip4">Testing</div>
+        </div>
+
         <div class="small-block block image-block" id="image1">
             <div class="tooltip" id="tooltip1">First 3D print</div>
         </div>
         <div class="large-block block image-block" id="image2">
             <div class="tooltip" id="tooltip2">Final CAD model</div>
         </div>
-        
-        <div class="large-block block centered-block">
-            <h2 class="heading">My Contributions</h2>
-            <p class="text">My success illustrating ideas through my initial CAD models led to aspects of my mockup being integrated into the final design, primarily the drawbridge mechanism. Additionally, I eagerly helped in the coding portion. I felt comfortable creating flowcharts and after completing my own code snippet I led the way in writing the group and mechanism (Q-ARM/Actuator) code.</p>
-        </div>
-        <div class="small-block block image-block" id="image4" style="box-shadow: 0px 0px 15px 1px rgb(30, 30, 30);">
-            <div class="tooltip" id="tooltip4">Testing The Design</div>
-        </div>
-        <div class="small-block block image-block" id="image3">
-            <div class="tooltip" id="tooltip3">Prusa 3D Printer</div>
-        </div>
-        <div class="large-block block centered-block">
-            <h2 class="heading">What I Learned</h2>
-            <p class="text">From this project I learned more about 3D printing regarding 3D model preparation, print settings, and support implementation. Additionally, throughout this project I developed my initiative. When I took initiative on tasks the group felt more comfortable at the time, but they would then work more effectively on their tasks later on. Initiative led to a trustworthy and reliable group environment helping to shape a better product.</p>
-        </div>
-        <div class="large-block centered-block block">
-            <h2 class="heading">The Outcome</h2>
-            <p class="text">With highs and lows, our product wasn’t exactly what the team envisioned, but when the project seemed grim the team still banded together to help each other out and keep morale high. Although rigid and practical, laser cutting has strict dimensions which make some designs challenging to create; I wonder how our design and outcome would change if we decided to use laser cutting.</p>
-        </div>
-        <div class="small-block block"></div>
+
     </div>
 
     <div class="corner-chip">
